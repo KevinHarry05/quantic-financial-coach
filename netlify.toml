@@ -1,0 +1,13 @@
+[build]
+  command = "pnpm install && pnpm build"
+  publish = ".next"
+  [build.environment]
+    PNPM_FLAGS = "--no-frozen-lockfile"
+
+# Optional: uncomment plugin if deploying Next.js advanced features
+#[[plugins]]
+#  package = "@netlify/plugin-nextjs"
+
+[dev]
+  command = "pnpm dev"
+  port = 3000

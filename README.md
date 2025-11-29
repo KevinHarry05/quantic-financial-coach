@@ -12,6 +12,8 @@ pnpm install
 
 2. Create a `.env.local` based on `.env.local.example` and add the `NEWS_API_KEY` for your chosen news provider (e.g., NewsAPI.org):
 
+Important: This project targets Node 18. Netlify and other CI systems should use Node 18 for builds; we've included an `.nvmrc`.
+
 ```
 NEWS_API_KEY=your_api_key_here
 NEWS_API_URL=https://newsapi.org/v2/top-headlines
@@ -44,6 +46,10 @@ Open http://localhost:3000 (or the port that Next selects).
 
 - If you plan to deploy this app, set environment variables directly in your deployment provider (Vercel, Netlify, etc.) and **do not** commit `.env.local` to source control.
 - Replace placeholder course images in `public/` with your own assets for production use.
+
+### Netlify
+- We've added a `netlify.toml` to help Netlify runs the correct build. It runs `pnpm install && pnpm build` and publishes `.next`.
+ - `netlify.toml` also includes a `dev` command for local testing.
 
 ## Testing your MarketAux integration
 
