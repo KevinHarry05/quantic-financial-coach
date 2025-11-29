@@ -12,7 +12,7 @@ pnpm install
 
 2. Create a `.env.local` based on `.env.local.example` and add the `NEWS_API_KEY` for your chosen news provider (e.g., NewsAPI.org):
 
-Important: This project targets Node 18. Netlify and other CI systems should use Node 18 for builds; we've included an `.nvmrc`.
+Important: This project targets Node >= 20.9.0. Netlify and other CI systems should use Node 20.9.0+ for builds; we've included an `.nvmrc`.
 
 ```
 NEWS_API_KEY=your_api_key_here
