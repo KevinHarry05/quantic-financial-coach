@@ -175,11 +175,6 @@
   animation: cardEntrance 300ms ease-in-out both;
 }
 
-/* Simple hero stagger helper */
-.hero-delay {
-  animation-delay: 150ms;
-}
-
 
 /* Loader spinner */
 .loader {
